@@ -7,6 +7,9 @@ body {
   font-family: Helvetica;
   background-color: #0f5f60;
   text-align: -webkit-center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .flex-ctr {
@@ -15,11 +18,20 @@ body {
   align-items: center;
 }
 
-img {
-  width: 50%;
+.image1 {
+  width: 40%;
   border-radius: 50%;
   border: 5px solid #84c492;
 }
+
+.image2 {
+    width: 60%;
+    border-radius: 50%;
+    border: 5px solid #84c492;
+    align-self: center;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
 
 .flex-container {
   display: flex;
@@ -28,13 +40,38 @@ img {
   margin-top: 150px;
 }
 
+.flex-container-horizontal{
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  margin-top: 150px;
+  height: fit-content;
+  margin-left: 100px;
+}
+
 .whiteDiv {
   background-color: #ffffff;
   flex-direction: column;
 }
+
+.whiteDivHorizontal{
+    background-color: #ffffff;
+    flex-direction: column;
+    display: flex;
+    width: 250px;
+}
+
 .beigeDiv {
   background-color: #f3f3f3;
   flex-direction: column;
+}
+
+.beigeDivHorizontal{
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
 }
 
 .phoneDiv {
@@ -48,6 +85,7 @@ img {
   width: 50%;
   height: 60px;
 }
+
 
 .flex-container2 {
   display: flex;
@@ -80,9 +118,22 @@ img {
   color: #b9b9b9;
 }
 
-.title {
-  margin-bottom: 20px;
+.leftText{
+    width: 100%;
+    text-align-last: left;
+    color: #b9b9b9;
 }
+
+.title {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: #979799;
+}
+
+.title2 {
+    margin-bottom: 20px;
+    color: #979799;
+  }
 
 .price {
   margin-bottom: 20px;
@@ -90,4 +141,30 @@ img {
 
 .name {
   margin: 5px 0px 15px 0px;
+}
+
+.jobDescription{
+    padding-left: 15px;
+    border-left: 2px solid #5bbd7a;
+    line-height: 20px;
+    color: #b9b9b9;
+    margin-bottom: 20px;
+}
+
+.innerDiv{
+    width: 80%;
+    text-align: initial;
+}
+
+.name2{
+    margin: 20px 0px 0px 0px;
+}
+
+.flex-container2Horizontal{
+    display: flex;
+    flex-direction: row;
+}
+
+.bottomDiv{
+margin-bottom: 10px;
 }
